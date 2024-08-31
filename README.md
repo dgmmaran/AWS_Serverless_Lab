@@ -4,14 +4,14 @@
 
 Let's start with the High Level Design.
 ![High Level Design](./images/high-level-design.png)
-An Amazon API Gateway is a collection of resources and methods. For this tutorial, you create one resource (DynamoDBManager) and define one method (POST) on it. The method is backed by a Lambda function (LambdaFunctionOverHttps). That is, when you call the API through an HTTPS endpoint, Amazon API Gateway invokes the Lambda function.
+Amazon API Gateway allows you to create and manage a collection of resources and methods. In this tutorial, you'll create a resource called DynamoDBManager and define a POST method for it. This method is linked to a Lambda function (LambdaFunctionOverHttps), which is triggered when the API is called through an HTTPS endpoint.
 
 The POST method on the DynamoDBManager resource supports the following DynamoDB operations:
 
-* Create, update, and delete an item.
-* Read an item.
-* Scan an item.
-* Other operations (echo, ping), not related to DynamoDB, that you can use for testing.
+* Creating, updating, and deleting items.
+* Reading items.
+* Scanning items.
+* Additional operations (echo, ping) for testing purposes, unrelated to DynamoDB.
 
 The request payload you send in the POST request identifies the DynamoDB operation and provides necessary data. For example:
 
