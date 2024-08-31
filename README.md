@@ -1,6 +1,6 @@
-# LevelUp! Lab for Serverless
+# Serverless Application Design with API Gateway, Lambda and DynamoDB
 
-## Lab Overview And High Level Design
+## Overview
 
 Let's start with the High Level Design.
 ![High Level Design](./images/high-level-design.png)
