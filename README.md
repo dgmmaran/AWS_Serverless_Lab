@@ -6,40 +6,20 @@ Let's start with the High Level Design.
 ![High Level Design](./images/high-level-design.png)
 Amazon API Gateway allows you to create and manage a collection of resources and methods. In this tutorial, you'll create a resource called DynamoDBManager and define a POST method for it. This method is linked to a Lambda function (LambdaFunctionOverHttps), which is triggered when the API is called through an HTTPS endpoint.
 
-The POST method on the DynamoDBManager resource supports the following DynamoDB operations:
+Please find the steps below:
+1.Create Lambda IAM Role
+2.Create Lambda Function
+3.Test Lambda Function
+4.Create DynamoDB Table
+5.Create API
+6.Deploy the API
+7.Running Creating/Read operations using POSTMAN
 
-* Creating, updating, and deleting items.
-* Reading items.
-* Scanning items.
-* Additional operations (echo, ping) for testing purposes, unrelated to DynamoDB.
+
 
 The request payload you send in the POST request identifies the DynamoDB operation and provides necessary data. For example:
 
-Sample request payload for a DynamoDB create item operation:
 
-```json
-{
-    "operation": "create",
-    "tableName": "lambda-apigateway",
-    "payload": {
-        "Item": {
-            "id": "1",
-            "name": "Bob"
-        }
-    }
-}
-```
-Sample request payload for a DynamoDB read item operation:
-```json
-{
-    "operation": "read",
-    "tableName": "lambda-apigateway",
-    "payload": {
-        "Key": {
-            "id": "1"
-        }
-    }
-}
 ```
 
 ## Setup
