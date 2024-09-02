@@ -15,7 +15,7 @@ The POST method on the DynamoDBManager resource supports the following DynamoDB 
 
 The request payload you send in the POST request identifies the DynamoDB operation and provides necessary data. For example:
 
-The following is a sample request payload for a DynamoDB create item operation:
+Sample request payload for a DynamoDB create item operation:
 
 ```json
 {
@@ -29,7 +29,7 @@ The following is a sample request payload for a DynamoDB create item operation:
     }
 }
 ```
-The following is a sample request payload for a DynamoDB read item operation:
+Sample request payload for a DynamoDB read item operation:
 ```json
 {
     "operation": "read",
