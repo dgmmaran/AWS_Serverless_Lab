@@ -14,7 +14,7 @@ Please find the steps below:
 4. Create DynamoDB Table
 5. Create API
 6. Deploy the API
-7. Running Creating/Read operations using POSTMAN
+7. Running Create/Read operations using POSTMAN
 
 The following is a sample request payload for a DynamoDB create item operation:
 
